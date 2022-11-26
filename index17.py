@@ -14,4 +14,21 @@ while temp!=0:
 if sum == int(num):
     print("It is pallindrome");
 else:
-    print("Not a pallindrome")        
+    print("Not a pallindrome");
+#--------------------------------
+
+num1 = input("Enter a number");
+
+length2 = len(num1);
+temp2 = int(num1);
+sum2 = 0;
+while temp2 != 0:
+    rem = temp2 % 10;
+    val1 = rem ** length2;
+    sum2 = sum2 + val1;
+    temp2 = math.floor(temp2/10);
+
+if sum2 == int(num1):
+    print("It is pallindrome");
+else:
+    print("Not a pallindrome");
