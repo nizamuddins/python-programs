@@ -1,3 +1,5 @@
+import random
+import math
 # program to shuffle the deck of cards declare card elements
 suits = ["Spades", "Diamonds", "Club", "Heart"];
 values = [
@@ -31,4 +33,12 @@ for i in range(0,len(suits)):
         deck.append(pair)
 
 for i in range(0,len(deck)):
-    
+    j = math.floor(random.random()*len(deck));
+    temp = deck[i];
+    deck[i] = deck[j];
+    deck[j] = deck[i];
+
+for i in range(0,5):
+    print(f'{deck[i].Value} of {deck[i].Suit}');
+
+
