@@ -8,9 +8,9 @@ dictionary = {
 dictionary2 = {
     'name':"nzam",
     'age':23,
-    "work":"student"
+    "work":['nizma']
 }
 
 
-list1 = copy.deepcopy(dictionary2,dictionary);
+list1 = copy.deepcopy(dictionary2);
 print(list1)

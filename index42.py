@@ -1,4 +1,4 @@
-#  By has_key()
+#  By in
 # tuples
 defTuples = ("apple","mango","banana");
 for i in defTuples:
